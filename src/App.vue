@@ -1,6 +1,7 @@
 <script setup>
 
 import NavBar from './components/icons/NavBar.vue';
+import DatosPersonales from './components/DatosPersonales.vue';
 
 </script>
 
@@ -8,6 +9,8 @@ import NavBar from './components/icons/NavBar.vue';
   <header>
      <!-- barra de navegacion -->
     <NavBar />
+    <!-- componente Datos peronales -->
+     <DatosPersonales />
     
   </header>
   <main>

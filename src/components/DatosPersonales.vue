@@ -1,5 +1,5 @@
 <script setup>
-const title = "Juan Pérez";
+const title = "Juan Moreno";
 const descripcion = "Técnico Universitario en Programación - UTN";
 const residencia = "San Rafael, Mendoza, Argentina";
 const presentacion = "Hola, Bienvenido a mi portafolio de proyectos. Soy un desarrollador web con experiencia en el desarrollo de aplicaciones web";
@@ -9,7 +9,7 @@ const redesociales = [
   { id: 3, name: "github", src: "/src/assets/github_icon.svg", url: "" },
   { id: 4, name: "curriculum", src: "/src/assets/cv_resume_icon.svg", url: "" },
 ];
-const telefono = "+54 9 2604-474849";
+const telefono = "+54 9 2604-056016";
 </script>
 
 <template>

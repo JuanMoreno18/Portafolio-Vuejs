@@ -4,10 +4,10 @@ import FondoLava from './FondoLava.vue';
 
 //Liste es un arreglo con ref para que se pueda reactivar el cambio de los intereses
 const intereses = ref([
-    'Desarrollo de Software de Código Abierto: Contribuyo a proyectos en GitHub, colaborando con otros desarrolladores para mejorar herramientas y librerías.',
-    'Deportes al Aire Libre: Disfruto del senderismo y el ciclismo de montaña, actividades que practico regularmente para mantener un equilibrio entre el trabajo y la salud física.',
-    'Tecnología de Innovación: Me apasiona explorar nuevas tendencias tecnológicas como la inteligencia artificial y el desarrollo de aplicaciones móviles.',
-    'Fotografía: Practico la fotografía como un hobby, lo que me ayuda a mantener una perspectiva creativa tanto en mi vida profesional como personal.'
+    'Actualmente curso la carrera de Programación en la UTN, donde llevo un año fortaleciendo mis conocimientos en desarrollo de software, lógica y resolución de problemas. Me motiva seguir aprendiendo y aplicar lo que estudio en proyectos reales',
+    'Además de la programación, me apasiona el diseño gráfico. Disfruto crear interfaces limpias y visualmente atractivas, buscando siempre combinar funcionalidad y estética en cada proyecto.',
+    'Tengo gran facilidad para la informática y la tecnología en general. Me gusta explorar nuevas herramientas, optimizar procesos y mantenerme actualizado con las últimas tendencias del sector.',
+    'Valoro el trabajo en equipo y la oportunidad de colaborar con otros desarrolladores. Considero que cada proyecto es una oportunidad para aprender, compartir ideas y mejorar como profesional.'
 ]);
 </script>
 
@@ -27,17 +27,18 @@ const intereses = ref([
 
 <style scoped>
 .intereses-contenedor {
-  position: relative; /* Necesario para posicionar el fondo */
+  position: relative;
   display: flex;
-  flex-direction: column; /* o row si querés texto al costado */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 85%;
-  padding: 2rem;
-  min-height: 100vh; /* hace que ocupe toda la pantalla */
-  overflow: hidden; /* evita que el fondo sobresalga */
+  max-width: 100%;
+  padding: 3rem 2rem;
+  min-height: 100vh;
+  overflow: hidden;
 }
+
 
 .intereses-contenedor :deep(.fondo-lava) {
   position: absolute;
@@ -47,6 +48,7 @@ const intereses = ref([
   height: 100%;
   z-index: 0; /* queda detrás */
 }
+
 
 .contenedor-lista {
   position: relative; /* el texto queda encima del fondo */
@@ -58,6 +60,7 @@ const intereses = ref([
   font-size: 1.4rem;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
 }
+
 
 .item {
   margin-bottom: 1rem;

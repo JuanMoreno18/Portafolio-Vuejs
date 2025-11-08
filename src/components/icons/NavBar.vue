@@ -23,10 +23,22 @@ const navegacion= ref([
 
 <style scoped>
   .navbar {
-  background-color: var(--vt-c-indigo);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1135px;
+  width: 90%;
+  
+
+  background-color: rgb(236, 75, 11);
+  
   color: #fff;
   padding: 0.5rem 1rem;
   align-items: center;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 10px 10px;
 }
 
 .navbar-item {

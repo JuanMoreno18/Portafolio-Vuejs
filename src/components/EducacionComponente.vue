@@ -12,11 +12,9 @@ fechaColor.value = [
 ];
 /*Esta es la forma de utilizar el arreglo, sin el metodo value*/
 const educacion = ref([
-  {fecha: '2024', title: 'Técnicatura Universitaria en Programacion', descripcion: 'Incumbencias Profesionales: Operación y programación de computadoras, desarrollo de programas en distintos lenguajes, análisis y control de sistemas informáticos.', enlace:'https://www.youtube.com/'},
-  {fecha: '2023', title: 'Desarrollador Full Stack', descripcion: 'Trabajé en XYZ Tech, donde diseñé y desarrollé aplicaciones web completas utilizando tecnologías como Node.js, React y MongoDB.', enlace:'http:www.direccion.com'},
-  {fecha: '2022', title: 'Internship en Desarrollo Web', descripcion: 'Realicé una pasantía en ABC Solutions, contribuyendo en la creación de interfaces de usuario y optimización de sitios web.', enlace:'http:www.direccion.com'},
-  {fecha: '2021', title: 'Proyecto Personal - Aplicación de Gestión de Tareas', descripcion: 'Desarrollé una aplicación para la gestión de tareas diarias usando HTML, CSS y JavaScript, implementando funcionalidades como listas de tareas y recordatorios.', enlace:'http:www.direccion.com'},
-  {fecha: '2020', title: 'Curso de Introducción a la Programación', descripcion: 'Completé un curso en línea sobre fundamentos de programación, donde aprendí lenguajes como Python y Java.', enlace:'http:www.direccion.com'}
+  {fecha: '2025', title: 'Estudiante en programacion de la UTN San Rafael', descripcion: 'Actualmente me encuentro estudiando programacion en la universidad tecnologica nacional.', enlace:'https://www.frsr.utn.edu.ar/'},
+  {fecha: '2025', title: 'Cursos en UDEMY', descripcion: 'Me encuentro realizando cursos en UDEMY sobre HTML, CSS, JAVA desde cero para aumentar mis conocimientos en programacion.', enlace:'https://www.udemy.com/topic/http/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Branded-Topic_la.ES_cc.LATAM&campaigntype=Search&portfolio=BrandTopic&language=ES&product=Course&test=&audience=Keyword&topic=&priority=&utm_content=deal4584&utm_term=_._ag_122876150323_._ad_762942545663_._kw_http%20udemy_._de_c_._dm__._pl__._ti_kwd-328803976525_._li_1000095_._pd__._&matchtype=b&gad_source=1&gad_campaignid=12560398702&gbraid=0AAAAADROdO1x6U5oj-xORNNL3mQz3Eu5T&gclid=CjwKCAiAzrbIBhA3EiwAUBaUdYu2gs41pvxqsfh7agLEOFg3fBArv8UKhxKyA0k7H0YN2jVFjdl4xxoCDbAQAvD_BwE'},
+  {fecha: '2024', title: 'Curso Inteligencia Artificial', descripcion: 'Estoy realizando un curso sobre IA de basico a avanzado presencialmente en Punto digital San Rafael Argentina ', enlace:'https://eleditormendoza.com.ar/sociedad/san-rafael-20-capacitan-gratis-sus-ciudadanos-inteligencia-artificial-y-chat-gpt-n5359217'},
 ]);
 </script>
 

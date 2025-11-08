@@ -1,41 +1,46 @@
 <script setup>
+import Proyecto1 from '/src/assets/proyecto1.png'
+import Proyecto2 from '/src/assets/proyecto2.png'
+import Proyecto3 from '/src/assets/proyecto3.png'
+import Proyecto4 from '/src/assets/proyecto4.png'
 
 import { ref } from 'vue';
 var misProyectos = ref([]);
 misProyectos.value = ([
 
-    {
-        id: 1,
-        src: "/src/assets/annidada-tech.jpg",
-        titulo: "Aplicacion de Reservas para Restaurantes (2023)",
-        descripcion: "Cree una aplicacion movil con Flutter que permite a los usuarios reservar mesas en restaurantes locales",
-        projectoLink: "https://www.google.com.ar",
-        githublink: "https://github.com/usuario/proyecto"
-    },
-    {
-        id: 2,
-        src: "/src/assets/annidada-tech.jpg",
-        titulo: "Aplicacion de Reservas para Restaurantes (2023)",
-        descripcion: "Cree una aplicacion movil con Flutter que permite a los usuarios reservar mesas en restaurantes locales",
-        projectoLink: "https://www.google.com.ar",
-        githublink: "https://github.com/usuario/proyecto"
-    },
-    {
-        id: 3,
-        src: "/src/assets/annidada-tech.jpg",
-        titulo: "Aplicacion de Reservas para Restaurantes (2023)",
-        descripcion: "Cree una aplicacion movil con Flutter que permite a los usuarios reservar mesas en restaurantes locales",
-        projectoLink: "https://www.google.com.ar",
-        githublink: "https://github.com/usuario/proyecto"
-    },
-    {
-        id: 4,
-        src: "/src/assets/annidada-tech.jpg",
-        titulo: "Aplicacion de Reservas para Restaurantes (2023)",
-        descripcion: "Cree una aplicacion movil con Flutter que permite a los usuarios reservar mesas en restaurantes locales",
-        projectoLink: "https://www.google.com.ar",
-        githublink: "https://github.com/usuario/proyecto"
-    },
+{
+    id: 1,
+    src: Proyecto1,
+    titulo: "Portafolio Web (2025)",
+    descripcion: "Diseñé y desarrollé mi portafolio web desde cero con HTML, CSS y JavaScript, mostrando mis proyectos y formación.",
+    projectoLink: "https://portafolioweb-juanm.netlify.app/",
+    githublink: "https://github.com/usuario/curso-online"
+},
+{
+    id: 2,
+    src: Proyecto2,
+    titulo: "Proyecto Académico - Sistema de Restaurante (2025)",
+    descripcion: "Diseñamos un programa en Pseint y rediseñado en Java sobre un sistema de pedidos en un restaurante.",
+    projectoLink: "https://www.youtube.com/watch?v=mVpUDBsDrZI",
+    githublink: "https://github.com/usuario/inventario-app"
+},
+{
+    id: 3,
+    src: Proyecto3,
+    titulo: "Portafolio grupal en vuej(2025)",
+    descripcion: "Creamos un portafolio grupal en vuej para la tecnicatura de programacion de nuestro equipo Escuadron Lobo.",
+    projectoLink: "https://portafolio-escuadronlobo.netlify.app/#Top",
+    githublink: "https://github.com/usuario/agencia-landing"
+},
+{
+    id: 4,
+    src: Proyecto4,
+    titulo: "Proyecto final Ingles I (2025)",
+    descripcion: "Desarrollé junto a mi equipo de trabajo un video explicativo en inglés como parte de la cátedra de Inglés Técnico, presentando una aplicación de sistema de pedidos",
+    projectoLink: "https://drive.google.com/file/d/1cPmCz_bfWDtisGxR1lRpusifvb4j_9Vv/view",
+}
+
+
 ])
 
 </script>
@@ -160,16 +165,15 @@ misProyectos.value = ([
     max-width: 222px;
     /* Hace que el contenedor se ajuste flexiblemente ocupando al menos 300px de ancho */
     flex: 1 1 300px;
+    min-height: 100%;
 }
 
 /* Estilo para las imágenes dentro del contenedor 'proyecto' */
 .proyecto img {
-    /* Hace que la imagen ocupe el 100% del ancho del contenedor */
-    width: 100%;
-    /* Mantiene la relación de aspecto de la imagen */
-    height: auto;
-    /* Asegura que la imagen se muestre como un bloque, sin espacio en línea alrededor */
-    display: block;
+  width: 200%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
 }
 
 /* La clase 'proyecto-info' contiene la información del proyecto */
@@ -178,6 +182,9 @@ misProyectos.value = ([
     padding: 15px;
     /* Centra el texto dentro del contenedor */
     text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Estilo para los títulos de los proyectos */
@@ -191,6 +198,7 @@ misProyectos.value = ([
 }
 /* Estilo para los párrafos de los proyectos */
 .proyecto-info p {
+    flex-grow: 1;
     /* Establece un margen superior e inferior de 10px */
     margin: 10px 0;
     /* Define el tamaño de la fuente a 1em (igual al tamaño de fuente base) */
@@ -208,7 +216,7 @@ misProyectos.value = ([
     /* Establece un espacio de 10px entre los elementos */
     gap: 10px;
     /* Agrega un margen superior de 10px */
-    margin-top: 10px;
+    margin-top: auto;
 }
 
 /* Estilo para el botón 'Ver Más' dentro de la clase 'proyecto-links' */
@@ -235,19 +243,17 @@ misProyectos.value = ([
 }
 
 /* Estilo para el enlace a GitHub dentro de la clase 'proyecto-links' */
-.proyecto-links .github-link {
-    /* Aplica un color gris oscuro (#333) al texto */
-    color: #333;
-    /* Elimina el subrayado del texto */
-    text-decoration: none;
-    /* Establece el tamaño de fuente a 0.9em (un poco más pequeño que el tamaño base) */
-    font-size: 0.9em;
-}
+
 
 /* Estilo para cuando el enlace a GitHub es hover */
 .proyecto-links .github-link:hover {
     /* Añade un subrayado al texto */
     text-decoration: underline;
+}
+@media (min-width: 768px) {
+    .galeria {
+        align-items: stretch;
+    }
 }
 
 </style>

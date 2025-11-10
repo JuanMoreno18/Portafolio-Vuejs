@@ -1,12 +1,15 @@
 <script setup>
+import linkedin from '/src/assets/linkedin_icon.svg'
+import instagram from '/src/assets/instagram_icon.svg'
+import github from '/src/assets/github_icon.svg'
 const title = "Juan Moreno";
 const descripcion = "Técnico Universitario en Programación - UTN";
 const residencia = "San Rafael, Mendoza, Argentina";
 const presentacion = "Hola, Bienvenido a mi portafolio de proyectos. Soy un estudiante en programacion de la UTN San Rafael";
 const redesociales = [
-  { id: 1, name: "linkedin", src: "/src/assets/linkedin_icon.svg", url: "https://www.linkedin.com/in/juan-e-moreno-1006a3391/" },
-  { id: 2, name: "instagram", src: "/src/assets/instagram_icon.svg", url: "https://www.instagram.com/moreno_juan18?igsh=MTRlNGdxMzNhbXoybg==" },
-  { id: 3, name: "github", src: "/src/assets/github_icon.svg", url: "https://github.com/JuanMoreno18" },
+  { id: 1, name: "linkedin", src: linkedin, url: "https://www.linkedin.com/in/juan-e-moreno-1006a3391/" },
+  { id: 2, name: "instagram", src: instagram, url: "https://www.instagram.com/moreno_juan18?igsh=MTRlNGdxMzNhbXoybg==" },
+  { id: 3, name: "github", src: github, url: "https://github.com/JuanMoreno18" },
 ];
 const telefono = "+54 9 2604-056016";
 </script>
@@ -65,7 +68,10 @@ const telefono = "+54 9 2604-056016";
   align-items: center;
   min-height: 100vh;
   padding: 20px;
-  background: linear-gradient(135deg, #2d608f 0%, #9c450c 100%);
+  background-image: url("/src/assets/fondo azul.avif");
+  background-repeat: repeat;
+  background-size: cover;           /* usa el tamaño original de la imagen */
+  background-position: top left;   /* comienza desde la esquina superior izquierda */
 }
 
 .card {
@@ -89,7 +95,7 @@ const telefono = "+54 9 2604-056016";
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 10px;
-  background: linear-gradient(135deg, #ffffff 0%, #f16406 100%);
+  background: linear-gradient(135deg, #e6800b 0%, #f54e00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

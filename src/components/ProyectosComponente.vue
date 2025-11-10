@@ -255,5 +255,51 @@ misProyectos.value = ([
         align-items: stretch;
     }
 }
+@media (min-width: 375px) and (max-width: 425px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 2px;
+  }
+
+  .proyecto {
+    max-width: 95%;
+    border-radius: 8px;
+  }
+
+  .proyecto img {
+    height: 120px;
+  }
+
+  .proyecto-info {
+    padding: 1px;
+  }
+
+  .proyecto-info h3 {
+    font-size: 1em;
+    margin: 0px 0;
+  }
+
+  .proyecto-info p {
+    font-size: 0.85em;
+    margin: 0px 0;
+    line-height: 1.3;
+  }
+
+  .proyecto-links {
+    gap: 0px;
+    margin-top: 2px;
+  }
+
+  .btn-ver-mas {
+    padding: 6px 10px;
+    font-size: 0.85em;
+  }
+
+  .github-link {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+}
 
 </style>

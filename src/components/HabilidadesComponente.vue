@@ -263,21 +263,119 @@ const habilidades = ref([
 }
 
 .skill:hover {
-    font-size: 1.3em;
-    transition: 2s ease;
+    font-size: 1em;
+    transition: 1s ease;
 }
 
+/* Tablets */
 @media (max-width: 768px) {
-    .skills-categoria h3 {
-        justify-content: center;
-    }
+  .skills-contenedor {
+    padding: 1.5rem;
+  }
 
-    .skill {
-        justify-content: center;
-    }
+  .skills {
+    gap: 0.8rem;
+    justify-content: center;
+  }
+
+  .skill {
+    flex: 1 1 calc(30% - 0.8rem);
+    max-width: none;
+    min-width: 120px;
+    padding: 0.6em;
+  }
+
+  .skill img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skill span {
+    font-size: 0.85em;
+  }
+
+  .skills-categoria h3 {
+    font-size: 1.3em;
+  }
 }
 
+/* Celulares 375px - 424px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .skills-contenedor {
+    padding: 1rem;
+  }
+
+  .skills {
+    gap: 0.6rem;
+    justify-content: center;
+  }
+
+  .skill {
+    flex: 1 1 calc(48% - 0.6rem); /* 2 tarjetas por fila */
+    max-width: none;
+    min-width: 0;
+    padding: 0.5em 0.3em;
+    gap: 6px;
+  }
+
+  .skill img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .skill span {
+    font-size: 0.75em;
+    line-height: 1.2;
+  }
+
+  .skills-categoria h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.8rem;
+  }
+
+  .skills-categoria {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Celulares pequeños (menos de 375px) */
+@media (max-width: 374px) {
+  .skills-contenedor {
+    padding: 0.8rem;
+  }
+
+  .skills {
+    gap: 0.5rem;
+  }
+
+  .skill {
+    flex: 1 1 calc(48% - 0.5rem);
+    padding: 0.4em 0.2em;
+    gap: 5px;
+  }
+
+  .skill img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .skill span {
+    font-size: 0.7em;
+  }
+
+  .skills-categoria h3 {
+    font-size: 1.1em;
+  }
+}
+
+/* Computadoras */
+@media (min-width: 1024px) {
+  .skills {
+    gap: 1.5rem;
+  }
+
+  .skill {
+    flex: 1 1 calc(20% - 1.5rem);
+  }
+}
 </style>
-
-
-    

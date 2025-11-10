@@ -59,10 +59,68 @@ const intereses = ref([
   color: var(--vt-c-white-soft);
   font-size: 1.4rem;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+  max-width: 1200px;
 }
 
 
 .item {
   margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .intereses-contenedor {
+    padding: 2rem 1.5rem;
+    min-height: auto;
+  }
+
+  .contenedor-lista {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .item {
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+  }
+}
+
+/* Celulares (375px - 425px) */
+@media (max-width: 480px) {
+  .intereses-contenedor {
+    padding: 1.5rem 1rem;
+    min-height: auto;
+  }
+
+  .contenedor-lista {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .item {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 0.3rem;
+  }
+}
+
+/* Celulares muy pequeños */
+@media (max-width: 375px) {
+  .intereses-contenedor {
+    padding: 1rem 0.8rem;
+  }
+
+  .contenedor-lista {
+    padding: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .item {
+    margin-bottom: 0.9rem;
+    line-height: 1.4;
+  }
 }
 </style>

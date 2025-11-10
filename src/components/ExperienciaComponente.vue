@@ -1,12 +1,17 @@
 <script setup>
+import ventas from '/src/assets/ventas.svg'
+import ecommerce from '/src/assets/ecommerce.svg'
+import configuracion from '/src/assets/configuracion.svg'
+import uiux from '/src/assets/uiux.svg'
 import {ref} from 'vue';
+
 const titulo= "Programador y Técnico en Tecnología";
 const fecha= "Desde enero 2018 /  Noviembre 2025";
 const experiencias = ref([
-  {id:1, src: '/src/assets/ventas.svg', titulo: 'Trabajo en Equipo', parrafo: 'Trabajo en equipo con siete compañeros desarrollando proyectos de la tecnicatura en programacion. Me destaco por mi comunicación, compromiso y colaboración constante. Disfruto aprender y aportar ideas en cada etapa del desarrollo..'},
-  {id:2, src: '/src/assets/ecommerce.svg', titulo: 'Desarrollo Web', parrafo: 'Diseñé y desarrollé aplicaciones web utilizando Vue.js, HTML, CSS, JavaScript logrando reducir el tiempo de carga de las páginas en un 50%.'},
-  {id:3, src: '/src/assets/configuracion.svg', titulo: 'Optimizar', parrafo: 'Experiencia en reparación de equipos, mantenimiento de sistemas e instalación de software. Me motiva encontrar soluciones eficientes y aprender constantemente.'},
-  {id:4, src: '/src/assets/uiux.svg', titulo: 'Inteligencia artificial', parrafo: 'He diseñado proyectos que integran inteligencia artificial para resolver problemas de manera innovadora. Me interesa combinar la creatividad, el desarrollo de software y la IA para crear soluciones útiles y eficientes.'},
+  {id:1, src: ventas, titulo: 'Trabajo en Equipo', parrafo: 'Trabajo en equipo con siete compañeros desarrollando proyectos de la tecnicatura en programacion. Me destaco por mi comunicación, compromiso y colaboración constante. Disfruto aprender y aportar ideas en cada etapa del desarrollo..'},
+  {id:2, src: ecommerce, titulo: 'Desarrollo Web', parrafo: 'Diseñé y desarrollé aplicaciones web utilizando Vue.js, HTML, CSS, JavaScript logrando reducir el tiempo de carga de las páginas en un 50%.'},
+  {id:3, src: configuracion, titulo: 'Optimizar', parrafo: 'Experiencia en reparación de equipos, mantenimiento de sistemas e instalación de software. Me motiva encontrar soluciones eficientes y aprender constantemente.'},
+  {id:4, src: uiux, titulo: 'Inteligencia artificial', parrafo: 'He diseñado proyectos que integran inteligencia artificial para resolver problemas de manera innovadora. Me interesa combinar la creatividad, el desarrollo de software y la IA para crear soluciones útiles y eficientes.'},
 ]);
 </script>
 <template>
@@ -231,43 +236,41 @@ const experiencias = ref([
 
 @media (max-width: 768px) {
   .experiencia-container {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .header-card {
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .titulo {
-    font-size: 2rem;
-  }
-
-  .fecha {
-    font-size: 1rem;
-  }
-
-  .grid-experiencias {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .experiencia-card {
-    padding: 1.5rem;
-  }
-
-  .card-titulo {
     font-size: 1.2rem;
   }
 
-  .card-parrafo {
+  .fecha {
     font-size: 0.95rem;
   }
-}
 
-@media (max-width: 480px) {
-  .titulo {
-    font-size: 1.6rem;
+  .grid-experiencias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2rem;
+  }
+
+  .experiencia-card {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding-bottom: 0.2rem;
   }
 
   .icon-container {
@@ -278,6 +281,21 @@ const experiencias = ref([
   .imagen-svg {
     width: 30px;
     height: 30px;
+  }
+
+  .card-titulo {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+
+  .card-body {
+    margin-bottom: 0.1rem;
+    text-align: center;
+  }
+
+  .card-parrafo {
+    font-size: 0.8rem;
+    line-height: 1.4;
   }
 }
 </style>
